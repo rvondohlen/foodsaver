@@ -1,6 +1,8 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
+	color: #fff;
+	background-color: #333;
 }
 
 p {
@@ -9,6 +11,9 @@ p {
 
 .small-caps {
 	font-size: 10px;
+}
+.light {
+	opacity: .5;
 }
 
 #food-saver {
@@ -20,6 +25,12 @@ p {
 	color:white;
 	text-transform: capitalize;
 	padding:5px 8px;
+	border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.food-item:nth-child(1){
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 }
 
 .age-0 { background-color: #000; }
