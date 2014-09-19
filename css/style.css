@@ -1,12 +1,12 @@
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: #fff;
-	background-color: #333;
+	background-color: rgb(109, 110, 113);
 }
 
 p {
-	font-weight: 300;
+	font-weight: 500;
 }
 
 .small-caps {
@@ -14,6 +14,7 @@ p {
 }
 .light {
 	opacity: .5;
+	font-weight: 300;
 }
 
 #food-saver {
@@ -33,24 +34,25 @@ p {
 	border-top-right-radius: 4px;
 }
 
-.age-0 { background-color: #000; }
-.age-1 { background-color: #111; }
-.age-2 { background-color: #222; }
-.age-3 { background-color: #333; }
-.age-4 { background-color: #444; }
-.age-5 { background-color: #555; }
-.age-6 { background-color: #666; }
-.age-7 { background-color: #777; }
-.age-8 { background-color: #888; }
-.age-9 { background-color: #999; }
-.age-10{ background-color: #aaa; }
-.age-11{ background-color: #bbb; }
-.age-12{ background-color: #ccc; }
-.age-13{ background-color: #ddd; }
-.age-14{ background-color: #eee; }
+.age-0 { background-color: rgb(81, 173, 161); }
+.age-1 { background-color: rgb(84, 169, 154); }
+.age-2 { background-color: rgb(97, 166, 147); }
+.age-3 { background-color: rgb(110, 162, 140); }
+.age-4 { background-color: rgb(124, 158, 133); }
+.age-5 { background-color: rgb(137, 154, 126); }
+.age-6 { background-color: rgb(150, 151, 119); }
+.age-7 { background-color: rgb(163, 147, 113); }
+.age-8 { background-color: rgb(176, 143, 106); }
+.age-9 { background-color: rgb(189, 140, 99); }
+.age-10{ background-color: rgb(202, 136, 92); }
+.age-11{ background-color: rgb(216, 132, 85); }
+.age-12{ background-color: rgb(229, 128, 78); }
+.age-13{ background-color: rgb(238, 124, 70); }
+.age-14{ background-color: rgb(237, 119, 60); }
 
 .food-item > p {
 	margin-bottom: 0px;
+	font-weight: 700;
 }
 
 button.delete {
@@ -58,3 +60,6 @@ button.delete {
 	margin-bottom: 0;
 	margin-left: 8px;
 }
+
+
+#
