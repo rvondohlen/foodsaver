@@ -1,7 +1,15 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
 
+p {
+	font-weight: 300;
+}
+
+.small-caps {
+	font-size: 10px;
+}
 
 #food-saver {
 	margin-top: 50px;
@@ -9,11 +17,33 @@ body {
 }
 
 .food-item {
+	color:white;
 	text-transform: capitalize;
+	padding:5px 8px;
 }
 
+.age-0 { background-color: #000; }
+.age-1 { background-color: #111; }
+.age-2 { background-color: #222; }
+.age-3 { background-color: #333; }
+.age-4 { background-color: #444; }
+.age-5 { background-color: #555; }
+.age-6 { background-color: #666; }
+.age-7 { background-color: #777; }
+.age-8 { background-color: #888; }
+.age-9 { background-color: #999; }
+.age-10{ background-color: #aaa; }
+.age-11{ background-color: #bbb; }
+.age-12{ background-color: #ccc; }
+.age-13{ background-color: #ddd; }
+.age-14{ background-color: #eee; }
+
+.food-item > p {
+	margin-bottom: 0px;
+}
 
 button.delete {
 	display: none;
 	margin-bottom: 0;
+	margin-left: 8px;
 }

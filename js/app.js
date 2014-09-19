@@ -43,16 +43,22 @@
       'click button': 'delete'
     },
     render: function() {
+      var bornOnDate = this.model.get('birth');
+	  var age =  Math.floor((+new Date() - (+bornOnDate))/86400000);
+      this.$el.addClass( function() {
+      
+	    return 'age-'+ age;
+      });
+
       this.$el.html(this.template(this));
       return this;
     },
     name: function() { return this.model.get('name'); },
     age: function() {
-    	var bornOnDate = this.model.get('birth');
-		var age =  Math.floor((+new Date() - (+bornOnDate))/86400000);
-		return age + ' DAYS';
-		
-    },
+      var bornOnDate = this.model.get('birth');
+	  var age =  Math.floor((+new Date() - (+bornOnDate))/86400000);
+	  return age;
+	},
     delete: function() {
       this.model.destroy();
     }
