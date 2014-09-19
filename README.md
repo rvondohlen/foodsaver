@@ -8,3 +8,6 @@ The initial idea is to create a simple app that keeps track of all food items in
 
 A second iteration might integrate a shopping list as secondary functionality. 
 
+
+
+![initial mockup](https://raw.githubusercontent.com/rvondohlen/foodsaver/master/draft/FS-index-v1p1.jpg)
