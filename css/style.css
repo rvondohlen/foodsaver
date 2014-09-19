@@ -1,0 +1,19 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+#food-saver {
+	margin-top: 50px;
+	min-height: 25px;
+}
+
+.food-item {
+	text-transform: capitalize;
+}
+
+
+button.delete {
+	display: none;
+	margin-bottom: 0;
+}

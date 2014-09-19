@@ -2,9 +2,77 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Food Saver</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/foundation.min.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:700,300' rel='stylesheet' type='text/css'>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/modernizr.js"></script>
+
 </head>
 <body>
+
+	<div class="row">
+		<div class="large-6 medium-6 small-12 small-centered columns" id="food-saver">
+			
+		</div>
+	</div>
 	
+	<!-- templates -->
+	<script type="text/x-mustache-template" id="index-template">
+      <p>There are {{ count }} foods in the pantry</p>
+      <div class='food-list'></div>
+    </script>
+    <script type="text/x-mustache-template" id="pantry-template">
+      <p>
+      	{{ name }}
+      	<span class="right">{{ age }}
+          <button class='button alert radius tiny hidden delete'>&times;</button>
+        </span>
+      </p>
+    </script>
+    <script type="text/x-mustache-template" id="form-template">
+	  <div class="row">
+	    <div class="large-12 columns">
+	      <div class="row collapse">
+	        <div class="small-10 columns">
+	          <input type="text" id="name" placeholder="Food Item">
+	        </div>
+	        <div class="small-2 columns">
+	          <button type="submit" class="button postfix">&plus;</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>   
+    </script>
+
+	<script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/mustache.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/backbone-localstorage.js"></script>
+
+    <script src="js/app.js"></script>
+    
+    <script>
+
+		$(document).foundation();
+		$(function() { 
+		  FoodSaver.boot($('#food-saver')); 
+		  $(".food-item").click(function(){
+	      	$(this).find("button.delete").fadeToggle();
+	      });
+		});
+		
+
+		
+
+	</script>
+
+    
 </body>
-</html>
