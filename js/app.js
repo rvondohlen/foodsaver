@@ -10,13 +10,17 @@
   });
 
   FoodSaver.Foods = Backbone.Collection.extend({
-    localStorage: new Store("foods")
+    localStorage: new Store("foods"),
+    comparator: function(a, b) {
+      return a.get('birth') < b.get('birth') ? -1 : 1;
+    }
   });
 
   FoodSaver.Index = Backbone.View.extend({
     template: template('index'),
     initialize: function() {
       this.foods = new FoodSaver.Foods();
+      this.foods.sort();
       this.foods.on('all', this.render, this);
       this.foods.fetch();
     },

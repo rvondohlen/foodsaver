@@ -34,7 +34,7 @@ p {
 	border-top-right-radius: 4px;
 }
 
-.age-0 { background-color: rgb(81, 173, 161); }
+/*.age-0 { background-color: rgb(81, 173, 161); }
 .age-1 { background-color: rgb(84, 169, 154); }
 .age-2 { background-color: rgb(97, 166, 147); }
 .age-3 { background-color: rgb(110, 162, 140); }
@@ -48,7 +48,23 @@ p {
 .age-11{ background-color: rgb(216, 132, 85); }
 .age-12{ background-color: rgb(229, 128, 78); }
 .age-13{ background-color: rgb(238, 124, 70); }
-.age-14{ background-color: rgb(237, 119, 60); }
+.age-14{ background-color: rgb(237, 119, 60); }*/
+
+.age-0 { background-color: rgb(81, 173, 161); }
+
+.age-1 { background-color: rgb(97, 166, 147); }
+
+.age-2 { background-color: rgb(124, 158, 133); }
+
+.age-3 { background-color: rgb(150, 151, 119); }
+
+.age-4 { background-color: rgb(176, 143, 106); }
+
+.age-5{ background-color: rgb(202, 136, 92); }
+
+.age-6{ background-color: rgb(229, 128, 78); }
+
+.age-7{ background-color: rgb(237, 119, 60); }
 
 .food-item > p {
 	margin-bottom: 0px;
