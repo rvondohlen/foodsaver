@@ -2,7 +2,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	color: #fff;
-	background-color: rgb(109, 110, 113);
+	background-color: rgb(45, 16, 50);
 }
 
 p {
@@ -27,6 +27,7 @@ p {
 	text-transform: capitalize;
 	padding:5px 8px;
 	border-bottom: 1px solid rgba(255,255,255,.1);
+	min-height: 38px;
 }
 
 .food-item:nth-child(1){
@@ -50,7 +51,7 @@ p {
 .age-13{ background-color: rgb(238, 124, 70); }
 .age-14{ background-color: rgb(237, 119, 60); }*/
 
-.age-0 { background-color: rgb(81, 173, 161); }
+/*.age-0 { background-color: rgb(81, 173, 161); }
 
 .age-1 { background-color: rgb(97, 166, 147); }
 
@@ -64,7 +65,7 @@ p {
 
 .age-6{ background-color: rgb(229, 128, 78); }
 
-.age-7{ background-color: rgb(237, 119, 60); }
+.age-7{ background-color: rgb(237, 119, 60); }*/
 
 .food-item > p {
 	margin-bottom: 0px;
@@ -75,6 +76,9 @@ button.delete {
 	display: none;
 	margin-bottom: 0;
 	margin-left: 8px;
+	margin-right: -3px;
+	height: 24px;
+	line-height: 4px;
 }
 
 

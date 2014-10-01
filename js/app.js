@@ -23,6 +23,7 @@
       this.foods.sort();
       this.foods.on('all', this.render, this);
       this.foods.fetch();
+
     },
     render: function() {
       this.$el.html(this.template(this));
@@ -34,9 +35,6 @@
     addFood: function(food) {
       var view = new FoodSaver.Index.Pantry({model: food});
       this.$('.food-list').append(view.render().el);
-    },
-    count: function() {
-      return this.foods.length;
     }
   });
 
@@ -48,11 +46,17 @@
     },
     render: function() {
       var bornOnDate = this.model.get('birth');
-	  var age =  Math.floor((+new Date() - (+bornOnDate))/86400000);
-      this.$el.addClass( function() {
+	    var age =  Math.floor((+new Date() - (+bornOnDate))/86400000);
       
-	    return 'age-'+ age;
+      this.$el.addClass( function() {
+	      return 'age-'+ age;
       });
+
+      var birthMultiplier = age+1;
+      var backgroundColorPropertyArray = [ "rgb(", 81+(birthMultiplier*4), ", ", 170-(birthMultiplier*6), ", ", 160-(birthMultiplier*7)];
+      var backgroundColorProperty = backgroundColorPropertyArray.join(' ');
+
+      this.$el.css( 'background-color', backgroundColorProperty);
 
       this.$el.html(this.template(this));
       return this;
@@ -60,8 +64,8 @@
     name: function() { return this.model.get('name'); },
     age: function() {
       var bornOnDate = this.model.get('birth');
-	  var age =  Math.floor((+new Date() - (+bornOnDate))/86400000);
-	  return age;
+	    var age =  Math.floor((+new Date() - (+bornOnDate))/86400000);
+	    return age;
 	},
     delete: function() {
       this.model.destroy();
